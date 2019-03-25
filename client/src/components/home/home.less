@@ -1,0 +1,31 @@
+@import "../../common/less/variable.less";
+
+.container{
+  margin: 0 auto;
+  min-width: 1100px;
+  max-width: 1370px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.lWrapper{
+  position: relative;
+  flex: 0 0 360px;
+  width: 360px;
+  margin-right: 10px;
+  border-left:1px solid @color-border;
+  border-right:1px solid @color-border;
+  background: @color-background-lg;
+}
+
+.rWrapper{
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100%;
+  border-left:1px solid @color-border;
+  border-right:1px solid @color-border;
+}
